@@ -3,18 +3,6 @@ nav {
   color: white;
 }
 
-.mainbox {
-  width: 500px;
-  height: 300px;
-  border: solid 2px black;
-  border-radius: 5px;
-  background-color: pink;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
 .subbox {
   display: flex;
   flex-direction: column;
@@ -30,4 +18,23 @@ a.title {
   background-color: pink; /* 배경색 */
   border-radius: 10px; /* 모서리 둥글기 */
   text-decoration: none; /* 밑줄 없애기 */
+}
+
+.mainbox {
+  width: 500px;
+  height: 300px;
+  border: solid 2px black;
+  border-radius: 5px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+
+.xbox {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
