@@ -1,0 +1,33 @@
+nav {
+  background-color: blue;
+  color: white;
+}
+
+.mainbox {
+  width: 500px;
+  height: 300px;
+  border: solid 2px black;
+  border-radius: 5px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.subbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 50px;
+}
+
+a.title {
+  display: inline-block; /* 가로 길이를 제한하기 위해 필요 */
+  width: 50px; /* 가로 길이 */
+  background-color: pink; /* 배경색 */
+  border-radius: 10px; /* 모서리 둥글기 */
+  text-decoration: none; /* 밑줄 없애기 */
+}
