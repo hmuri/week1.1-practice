@@ -85,11 +85,66 @@
 
 // setupHideFunction();
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("toggleButton"); //document.querySelector("#toggleButton")
-  const mainBox = document.querySelector(".mainbox"); //document.getElementsByClassName("mainbox");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const toggleButton = document.getElementById("toggleButton"); //document.querySelector("#toggleButton")
+//   const mainBox = document.querySelector(".mainbox"); //document.getElementsByClassName("mainbox");
 
-  toggleButton.addEventListener("click", function () {
-    window.location.href = "next.html";
+//   toggleButton.addEventListener("click", function () {
+//     window.location.href = "next.html";
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const calculateButton = document.getElementById("calculateButton");
+//   const numInput1 = document.getElementById("numInput1");
+//   const numInput2 = document.getElementById("numInput2");
+//   const messages = document.querySelectorAll(".message");
+
+//   calculateButton.addEventListener("click", function () {
+//     const num1 = parseInt(numInput1.value, 10) || 0;
+//     const num2 = parseInt(numInput2.value, 10) || 0;
+//     let increment = 1;
+
+//     messages.forEach(function (message) {
+//       const adjustedNum1 = num1 + increment;
+//       const adjustedNum2 = num2 + increment;
+//       const result = adjustedNum1 * adjustedNum2;
+//       message.textContent = `${adjustedNum1} X ${adjustedNum2} = ${result}`;
+//       increment++;
+//     });
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const inputButton = document.getElementById("inputButton");
+//   const textInput = document.getElementById("textInput");
+//   const messages = document.querySelectorAll(".message");
+
+//   inputButton.addEventListener("click", function () {
+//     messages.forEach(function (message) {
+//       message.textContent = textInput.value; // 입력된 값을 모든 message 요소에 적용
+//     });
+//     textInput.value = ""; // 입력 후 입력 필드 초기화
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const calculateButton = document.getElementById("calculateButton");
+  const numInput1 = document.getElementById("numInput1");
+  const numInput2 = document.getElementById("numInput2");
+  const messages = document.querySelectorAll(".message");
+
+  calculateButton.addEventListener("click", function () {
+    const num1 = parseInt(numInput1.value, 10) || 0; //2
+    const num2 = parseInt(numInput2.value, 10) || 0; //4
+    let increment = 1;
+
+    messages.forEach(function (message) {
+      const adjustedNum1 = num1 + increment;
+      const adjustedNum2 = num2 + increment;
+      const result = adjustedNum1 * adjustedNum2;
+      message.textContent = `${adjustedNum1} X ${adjustedNum2} = ${result}`;
+      increment++;
+    });
   });
 });
